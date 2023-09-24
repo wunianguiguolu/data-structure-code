@@ -18,10 +18,31 @@ make
 ```
 
 ### Running
+<details>
+  <summary>Square Lattice</summary>
 
+
+- exact count
+  ```
+  cd scripts/Square
+  sh ./run_Square_exact.sh
+  ```
+
+- Monte Carlo 
+  ```
+  cd scripts/Square
+  sh ./run_Square_MC.sh
+  ```
+  
+- Monte Carlo Prototype 
+  ```
+  cd scripts/Square
+  sh ./run_Square_MC_Prototype.sh
+  ```
+
+</details>
 <details>
   <summary>SequenceList</summary>
-- 
   ```
   cd build/bin
   ./SequenceList
