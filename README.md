@@ -21,10 +21,12 @@ make
 
 <details>
   <summary>SequenceList</summary>
+- 
   ```
   cd build/bin
   ./SequenceList
   ```
+
 </details>
 
 
