@@ -21,10 +21,10 @@ make
 
 <details>
   <summary>SequenceList</summary>
-```
-cd build/bin
-./SequenceList
-```
+  ```
+  cd build/bin
+  ./SequenceList
+  ```
 </details>
 
 
@@ -32,8 +32,8 @@ cd build/bin
 ### Testing
 <details>
   <summary>SequenceList</summary>
-```
-cd build/bin
-./SequenceList_test
-```
+  ```
+  cd build/bin
+  ./SequenceList_test
+  ```
 </details>
