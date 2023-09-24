@@ -19,30 +19,9 @@ make
 
 ### Running
 <details>
-  <summary>Square Lattice</summary>
+  <summary>List</summary>
 
-
-- exact count
-  ```
-  cd scripts/Square
-  sh ./run_Square_exact.sh
-  ```
-
-- Monte Carlo 
-  ```
-  cd scripts/Square
-  sh ./run_Square_MC.sh
-  ```
-  
-- Monte Carlo Prototype 
-  ```
-  cd scripts/Square
-  sh ./run_Square_MC_Prototype.sh
-  ```
-
-</details>
-<details>
-  <summary>SequenceList</summary>
+- Sequence List
   ```
   cd build/bin
   ./SequenceList
@@ -54,9 +33,12 @@ make
 
 ### Testing
 <details>
-  <summary>SequenceList</summary>
+  <summary>List</summary>
+
+- Sequence List
   ```
   cd build/bin
   ./SequenceList_test
   ```
+
 </details>
