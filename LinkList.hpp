@@ -2,9 +2,6 @@
 #define __LinkList__
 
 #include "List.hpp"
-
-class OutOfBound{};
-class IllegalSize{};
 template <class elemType>
 class LinkList : public List<elemType>
 {

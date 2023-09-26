@@ -15,7 +15,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 # file( GLOB SRCS *.cpp *.hpp )
 # add_executable(SequenceList main.cpp List.cpp SequenceList.cpp List.hpp SequenceList.hpp ${SRCS})
 # target_compile_options(SequenceList PRIVATE -Wall -Wextra)            
-add_executable(SequenceList main.cpp SequenceList.cpp)
+add_executable(SequenceList main.cpp SequenceList.cpp LinkList.cpp)
 
 
 find_package(Catch2 3 REQUIRED)

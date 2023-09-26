@@ -1,5 +1,6 @@
 #include <iostream>
 #include "LinkList.hpp"
+#include "SequenceList.hpp"
 
 template<class elemType>
 LinkList<elemType>::LinkList()
@@ -10,7 +11,16 @@ LinkList<elemType>::LinkList()
 template<class elemType>
 void LinkList<elemType>::clear()
 {
-    
+    node *p, *q;
+    p = head->next;
+    head->next = NULL;
+    while(p){
+        q = p->next;
+        delete p;
+        p = q;
+    }
+    // delete p; why we can't delete the pointer p
+    return;
 }
 
 template<class elemType>
@@ -27,7 +37,12 @@ void LinkList<elemType>::insert(int i, const elemType &x)
 template<class elemType>
 void LinkList<elemType>::insert(elemType a[], int n)
 {
-    
+    node *tmp;
+    for (int i = 0; i < n; i++){
+        // tmp = node(a[i],  head->next); 
+        tmp = new node(a[i],  head->next);
+        head->next = tmp; 
+    }
 }
 
 template<class elemType>
@@ -45,19 +60,33 @@ int LinkList<elemType>::length() const
 template<class elemType>
 void LinkList<elemType>::remove(int i)
 {
-    
+    if(i < 0 || i >= length()) return;
+    node *tmp;
+    node *p = head;
+    for(int j = 0; j < i && p->next != NULL; j++) p = p->next;
+    tmp = p->next;
+    p->next = tmp->next;
+    delete tmp; 
+    if(p->next == NULL) p = NULL;
 }
 
 template<class elemType>
 void LinkList<elemType>::reverse()
 {
-    
+    node *q, *p = head->next;
+    head->next = NULL;
+    while(p){
+        q = p->next;
+        p->next = head->next;
+        head->next = p;
+        p = q;
+    }
 }
 
 template<class elemType>
 int LinkList<elemType>::search(const elemType &x) const
 {
-    // # another implementation
+    // ### another implementation
     // int position = 0;
     // node *p = head->next;
     // while (p){
@@ -81,13 +110,30 @@ int LinkList<elemType>::search(const elemType &x) const
 template<class elemType>
 void LinkList<elemType>::traverse() const
 {
-    
+    node *p = head->next;
+    if(!p) {
+        std::cout << "There's nothing in the array!" << std::endl;
+        return;
+    }
+    do{
+        std::cout << p->data << " ";
+        p = p->next;
+    }while(p!=NULL);
+    std::cout << std::endl;
+    return;
+
 }
 
 template<class elemType>
 elemType LinkList<elemType>::visit(int i) const
 {
-    
+    if (i < 0 || i >= length()) OutOfBound();
+    int j;
+    node *p = head->next;
+    for (j = 0; j < i; j++){
+        p = p->next;
+    }
+    return p->data;
 }
 
 template class LinkList<int>;
