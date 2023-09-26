@@ -26,6 +26,11 @@ make
   cd build/bin
   ./SequenceList
   ```
+- Link List
+  ```
+  cd build/bin
+  ./LinkList
+  ```
 
 </details>
 
@@ -40,5 +45,10 @@ make
   cd build/bin
   ./SequenceList_test
   ```
-
+- Link List
+  ```
+  cd build/bin
+  ./LinkList_test
+  ```
+  
 </details>
