@@ -21,5 +21,10 @@ add_executable(SequenceList main.cpp SequenceList.cpp)
 find_package(Catch2 3 REQUIRED)
 message ( STATUS "Catch2_FOUND      = ${Catch2_FOUND}" )
 
+# Tests for SequenceList
 add_executable(SequenceList_test UnitTests/SequenceList_test.cpp SequenceList.cpp)
 target_link_libraries(SequenceList_test PRIVATE Catch2::Catch2WithMain)
+
+# Tests for LinkList
+add_executable(LinkList_test UnitTests/LinkList_test.cpp LinkList.cpp)
+target_link_libraries(LinkList_test PRIVATE Catch2::Catch2WithMain)
