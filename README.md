@@ -31,7 +31,16 @@ make
   cd build/bin
   ./LinkList
   ```
-
+- Sequence Stack
+  ```
+  cd build/bin
+  ./SequenceStack
+  ```
+- Link Stack
+  ```
+  cd build/bin
+  ./LinkStack
+  ```
 </details>
 
 
@@ -50,5 +59,14 @@ make
   cd build/bin
   ./LinkList_test
   ```
-  
+- Sequence Stack
+  ```
+  cd build/bin
+  ./SequenceStack_test
+  ```
+- Link Stack
+  ```
+  cd build/bin
+  ./LinkStack_test
+  ```
 </details>
