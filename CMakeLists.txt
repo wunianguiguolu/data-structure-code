@@ -28,3 +28,7 @@ target_link_libraries(SequenceList_test PRIVATE Catch2::Catch2WithMain)
 # Tests for LinkList
 add_executable(LinkList_test UnitTests/LinkList_test.cpp LinkList.cpp)
 target_link_libraries(LinkList_test PRIVATE Catch2::Catch2WithMain)
+
+# Tests for SequenceStack
+add_executable(SequenceStack_test UnitTests/SequenceStack_test.cpp SequenceStack.cpp)
+target_link_libraries(SequenceStack_test PRIVATE Catch2::Catch2WithMain)
