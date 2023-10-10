@@ -54,6 +54,5 @@ void SequenceStack<elemType>::DoubleSpace()
     delete [] tmp;
 }
 
-
 template class SequenceStack<int>;
 template class SequenceStack<double>;
