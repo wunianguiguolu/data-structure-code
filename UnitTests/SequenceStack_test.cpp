@@ -4,7 +4,7 @@
 #include "../SequenceStack.hpp"
 
 // test for init isEpmty
-TEST_CASE("SequenceStack Test 1") {
+TEST_CASE("SequenceStack VTest 1") {
 	SequenceStack<int> stack;
 	// None
 
