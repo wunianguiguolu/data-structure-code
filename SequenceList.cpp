@@ -1,5 +1,6 @@
 #include <iostream>
 #include "SequenceList.hpp"
+#include "utils.hpp"
 
 template <class elemType>
 SequenceList<elemType>::SequenceList(int initSize)
@@ -20,7 +21,7 @@ void SequenceList<elemType>::clear()
 }
 
 template <class elemType>
-void SequenceList<elemType>::doubleSpace()
+void SequenceList<elemType>::DoubleSpace()
 {
     int j;
     elemType *tmp = new elemType [maxSize * 2];
@@ -43,7 +44,7 @@ void SequenceList<elemType>::insert(int i, const elemType &x)
     int j;
     if (i < 0 || i > currentLength) return;
     if (currentLength == maxSize)
-        doubleSpace();
+        DoubleSpace();
     for (j = currentLength; j > i; j--)
         data[j] = data[j - 1];
     data[i] = x;

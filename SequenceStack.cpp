@@ -1,6 +1,6 @@
 #include <iostream>
 #include "SequenceStack.hpp"
-#include "SequenceList.hpp"
+#include "utils.hpp"
 
 template<class elemType>
 SequenceStack<elemType>::SequenceStack(int initSize)
@@ -18,7 +18,7 @@ SequenceStack<elemType>::~SequenceStack()
 }
 
 template<class elemType>
-bool SequenceStack<elemType>::isEpmty() const
+bool SequenceStack<elemType>::isEmpty() const
 {
     return (Top == -1);
 }   

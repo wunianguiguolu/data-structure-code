@@ -13,7 +13,7 @@ public:
 	virtual elemType visit(int position) const = 0;
 	virtual void traverse() const = 0;
 	// virtual void erase(int i) = 0;
-	virtual ~List() {};
+	virtual ~List() {}
 };
 
 #endif //List.h

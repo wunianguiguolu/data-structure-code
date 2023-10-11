@@ -3,7 +3,7 @@
 #include "List.hpp"
 #include "SequenceList.hpp"
 #include "LinkList.hpp"
-
+#include "LinkQueue.hpp"
 
 
 int main(int argc, char* argv[])
@@ -36,5 +36,12 @@ int main(int argc, char* argv[])
 	std::cout << "right answer: 3 2 5 4 7." << std::endl;
 	
 	arr3.traverse();
+
+	LinkQueue<int> queue;
+    queue.enQueue(1);
+    queue.enQueue(2);
+	std::cout << "Head =" << queue.getHead() << std::endl;
+	int value = queue.deQueue();
+	std::cout << "value =" << value << std::endl;
 }
 

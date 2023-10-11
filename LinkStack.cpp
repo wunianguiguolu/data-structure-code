@@ -1,6 +1,6 @@
 #include <iostream>
 #include "LinkStack.hpp"
-#include "SequenceList.hpp"
+#include "utils.hpp"
 
 template<class elemType>
 LinkStack<elemType>::LinkStack()
@@ -21,7 +21,7 @@ LinkStack<elemType>::~LinkStack()
 }
 
 template<class elemType>
-bool LinkStack<elemType>::isEpmty() const
+bool LinkStack<elemType>::isEmpty() const
 {
     return Top == NULL;
 }   

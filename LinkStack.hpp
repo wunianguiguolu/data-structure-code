@@ -23,7 +23,7 @@ private:
 public:
     LinkStack();
     ~LinkStack();
-    bool isEpmty() const;
+    bool isEmpty() const;
     elemType top() const;
     void push(const elemType &x);
     elemType pop();

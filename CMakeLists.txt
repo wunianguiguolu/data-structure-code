@@ -15,24 +15,32 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 # file( GLOB SRCS *.cpp *.hpp )
 # add_executable(SequenceList main.cpp List.cpp SequenceList.cpp List.hpp SequenceList.hpp ${SRCS})
 # target_compile_options(SequenceList PRIVATE -Wall -Wextra)            
-add_executable(SequenceList main.cpp SequenceList.cpp LinkList.cpp)
+add_executable(test main.cpp SequenceList.cpp LinkList.cpp LinkQueue.cpp utils.cpp)
 
 
 find_package(Catch2 3 REQUIRED)
 message ( STATUS "Catch2_FOUND      = ${Catch2_FOUND}" )
 
 # Tests for SequenceList
-add_executable(SequenceList_test UnitTests/SequenceList_test.cpp SequenceList.cpp)
+add_executable(SequenceList_test UnitTests/SequenceList_test.cpp SequenceList.cpp utils.cpp)
 target_link_libraries(SequenceList_test PRIVATE Catch2::Catch2WithMain)
 
 # Tests for LinkList
-add_executable(LinkList_test UnitTests/LinkList_test.cpp LinkList.cpp)
+add_executable(LinkList_test UnitTests/LinkList_test.cpp LinkList.cpp utils.cpp)
 target_link_libraries(LinkList_test PRIVATE Catch2::Catch2WithMain)
 
 # Tests for SequenceStack
-add_executable(SequenceStack_test UnitTests/SequenceStack_test.cpp SequenceStack.cpp)
+add_executable(SequenceStack_test UnitTests/SequenceStack_test.cpp SequenceStack.cpp utils.cpp)
 target_link_libraries(SequenceStack_test PRIVATE Catch2::Catch2WithMain)
 
 # Tests for LinkStack
-add_executable(LinkStack_test UnitTests/LinkStack_test.cpp LinkStack.cpp)
+add_executable(LinkStack_test UnitTests/LinkStack_test.cpp LinkStack.cpp utils.cpp)
 target_link_libraries(LinkStack_test PRIVATE Catch2::Catch2WithMain)
+
+# Tests for SequenceQueue
+add_executable(SequenceQueue_test UnitTests/SequenceQueue_test.cpp SequenceQueue.cpp utils.cpp)
+target_link_libraries(SequenceQueue_test PRIVATE Catch2::Catch2WithMain)
+
+# Tests for LinkQueue
+add_executable(LinkQueue_test UnitTests/LinkQueue_test.cpp LinkQueue.cpp utils.cpp)
+target_link_libraries(LinkQueue_test PRIVATE Catch2::Catch2WithMain)

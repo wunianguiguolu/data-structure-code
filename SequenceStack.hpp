@@ -14,7 +14,7 @@ private:
 public:
     SequenceStack(int initSize = 10);
     ~SequenceStack();
-    bool isEpmty() const;
+    bool isEmpty() const;
     elemType top() const;
     void push(const elemType &x);
     elemType pop();

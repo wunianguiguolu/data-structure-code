@@ -1,6 +1,6 @@
 #include <iostream>
 #include "LinkList.hpp"
-#include "SequenceList.hpp"
+#include "utils.hpp"
 
 template<class elemType>
 LinkList<elemType>::LinkList()
