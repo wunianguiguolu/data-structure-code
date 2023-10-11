@@ -3,12 +3,12 @@
 #include <iostream>
 #include "../SequenceStack.hpp"
 
-// test for init isEpmty
+// test for init isEmpty
 TEST_CASE("SequenceStack Test 1") {
 	SequenceStack<int> stack;
 	// None
 
-	REQUIRE( stack.isEpmty() == 1 );
+	REQUIRE( stack.isEmpty() == 1 );
 };
 
 // test for push top
