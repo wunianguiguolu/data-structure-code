@@ -1,6 +1,6 @@
 #include <iostream>
-#include "SequenceStack.hpp"
-#include "utils.hpp"
+#include "../include/SequenceStack.hpp"
+#include "../include/utils.hpp"
 
 template<class elemType>
 SequenceStack<elemType>::SequenceStack(int initSize)

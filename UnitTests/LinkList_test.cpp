@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 
 #include <iostream>
-#include "../LinkList.hpp"
+#include "../include/LinkList.hpp"
 
 // test for function (init length)
 TEST_CASE("LinkList Test 1") {

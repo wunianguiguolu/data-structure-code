@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 
 #include <iostream>
-#include "../LinkStack.hpp"
+#include "../include/LinkStack.hpp"
 
 // test for init isEmpty
 TEST_CASE("LinkStack Test 1") {

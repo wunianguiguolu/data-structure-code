@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 
 #include <iostream>
-#include "../LinkQueue.hpp"
+#include "../include/LinkQueue.hpp"
 
 // test for init isEmpty
 TEST_CASE("LinkQueue Test 1") {

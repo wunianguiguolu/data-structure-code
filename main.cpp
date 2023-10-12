@@ -1,9 +1,9 @@
 #include <iostream>
 
-#include "List.hpp"
-#include "SequenceList.hpp"
-#include "LinkList.hpp"
-#include "LinkQueue.hpp"
+#include "include/List.hpp"
+#include "include/SequenceList.hpp"
+#include "include/LinkList.hpp"
+#include "include/LinkQueue.hpp"
 
 
 int main(int argc, char* argv[])

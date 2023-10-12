@@ -1,6 +1,6 @@
 #include <iostream>
-#include "LinkQueue.hpp"
-#include "utils.hpp"
+#include "../include/LinkQueue.hpp"
+#include "../include/utils.hpp"
   
 template<class elemType>
 LinkQueue<elemType>::~LinkQueue() 

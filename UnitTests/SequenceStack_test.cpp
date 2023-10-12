@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 
 #include <iostream>
-#include "../SequenceStack.hpp"
+#include "../include/SequenceStack.hpp"
 
 // test for init isEmpty
 TEST_CASE("SequenceStack Test 1") {

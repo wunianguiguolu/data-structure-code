@@ -1,6 +1,6 @@
 #include <iostream>
-#include "LinkStack.hpp"
-#include "utils.hpp"
+#include "../include/LinkStack.hpp"
+#include "../include/utils.hpp"
 
 template<class elemType>
 LinkStack<elemType>::LinkStack()

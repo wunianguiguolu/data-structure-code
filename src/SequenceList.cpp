@@ -1,6 +1,6 @@
 #include <iostream>
-#include "SequenceList.hpp"
-#include "utils.hpp"
+#include "../include/SequenceList.hpp"
+#include "../include/utils.hpp"
 
 template <class elemType>
 SequenceList<elemType>::SequenceList(int initSize)

@@ -1,6 +1,6 @@
 #include <iostream>
-#include "SequenceQueue.hpp"
-#include "utils.hpp"
+#include "../include/SequenceQueue.hpp"
+#include "../include/utils.hpp"
  
 template<class elemType>
 elemType SequenceQueue<elemType>::getHead() const

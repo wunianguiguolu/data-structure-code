@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 
 #include <iostream>
-#include "../SequenceQueue.hpp"
+#include "../include/SequenceQueue.hpp"
 
 // test for init isEmpty
 TEST_CASE("SequenceQueue Test 1") {

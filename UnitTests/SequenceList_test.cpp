@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 
 #include <iostream>
-#include "../SequenceList.hpp"
+#include "../include/SequenceList.hpp"
 
 // test for init
 TEST_CASE("SequenceList Test 1") {
