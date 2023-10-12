@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "include/List.hpp"
+// #include "include/List.hpp"
 #include "include/SequenceList.hpp"
 #include "include/LinkList.hpp"
 #include "include/LinkQueue.hpp"

@@ -52,3 +52,4 @@ elemType LinkStack<elemType>::pop()
 
 template class LinkStack<int>;
 template class LinkStack<double>;
+template class LinkStack<char>;

@@ -44,3 +44,7 @@ target_link_libraries(SequenceQueue_test PRIVATE Catch2::Catch2WithMain)
 # Tests for LinkQueue
 add_executable(LinkQueue_test UnitTests/LinkQueue_test.cpp src/LinkQueue.cpp src/utils.cpp)
 target_link_libraries(LinkQueue_test PRIVATE Catch2::Catch2WithMain)
+
+# Tests for ParenMatch
+add_executable(ParenMatch_test UnitTests/ParenMatch_test.cpp ParenMatch.cpp src/LinkStack.cpp)
+target_link_libraries(ParenMatch_test PRIVATE Catch2::Catch2WithMain)
