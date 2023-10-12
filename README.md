@@ -23,23 +23,15 @@ make
 
 - Sequence List
   ```
-  cd build/bin
-  ./SequenceList
   ```
 - Link List
   ```
-  cd build/bin
-  ./LinkList
   ```
 - Sequence Stack
   ```
-  cd build/bin
-  ./SequenceStack
   ```
 - Link Stack
   ```
-  cd build/bin
-  ./LinkStack
   ```
 </details>
 
@@ -68,5 +60,15 @@ make
   ```
   cd build/bin
   ./LinkStack_test
+  ```
+- Sequence Queue
+  ```
+  cd build/bin
+  ./SequenceQueue_test
+  ```
+- Link Queue
+  ```
+  cd build/bin
+  ./LinkQueue_test
   ```
 </details>
