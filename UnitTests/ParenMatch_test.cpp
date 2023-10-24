@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 
 #include <iostream>
-#include "../ParenMatch.hpp"
+#include "../include/ParenMatch.hpp"
 
 // test for ParenMatch
 TEST_CASE("ParenMatch Test 1") {

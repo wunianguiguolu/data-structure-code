@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../include/SequenceQueue.hpp"
 #include "../include/utils.hpp"
+#include "../include/BTree.hpp"
  
 template<class elemType>
 elemType SequenceQueue<elemType>::getHead() const
@@ -38,3 +39,6 @@ void SequenceQueue<elemType>::DoubleSpace()
 
 template class SequenceQueue<int>;
 template class SequenceQueue<double>;
+template class SequenceQueue<BTree<int>::Node*>;
+template class SequenceQueue<BTree<double>::Node*>;
+template class SequenceQueue<BTree<char>::Node*>;

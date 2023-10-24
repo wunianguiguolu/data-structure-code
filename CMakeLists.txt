@@ -8,8 +8,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # 添加可执行文件生成规则
-# add_executable(HelloWorld HelloWorld.cpp)
-# add_executable(List main.cpp List.cpp)
+add_executable(HelloWorld HelloWorld.cpp src/SequenceQueue.cpp src/BTree.cpp src/utils.cpp)
 
 ### SequenceList target 
 # file( GLOB SRCS *.cpp *.hpp )
@@ -45,6 +44,14 @@ target_link_libraries(SequenceQueue_test PRIVATE Catch2::Catch2WithMain)
 add_executable(LinkQueue_test UnitTests/LinkQueue_test.cpp src/LinkQueue.cpp src/utils.cpp)
 target_link_libraries(LinkQueue_test PRIVATE Catch2::Catch2WithMain)
 
+# Tests for BTree
+add_executable(BTree_test UnitTests/BTree_test.cpp src/BTree.cpp src/SequenceQueue.cpp src/utils.cpp)
+target_link_libraries(BTree_test PRIVATE Catch2::Catch2WithMain)
+
 # Tests for ParenMatch
-add_executable(ParenMatch_test UnitTests/ParenMatch_test.cpp ParenMatch.cpp src/LinkStack.cpp)
+add_executable(ParenMatch_test UnitTests/ParenMatch_test.cpp src/ParenMatch.cpp src/LinkStack.cpp)
 target_link_libraries(ParenMatch_test PRIVATE Catch2::Catch2WithMain)
+
+# Tests for InToSufForm
+add_executable(InToSufForm_test UnitTests/InToSufForm_test.cpp src/InToSufForm.cpp src/LinkStack.cpp)
+target_link_libraries(InToSufForm_test PRIVATE Catch2::Catch2WithMain)
