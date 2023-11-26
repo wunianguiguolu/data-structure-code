@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../include/SequenceStack.hpp"
 #include "../include/utils.hpp"
+#include "../include/BTree.hpp"
 
 template<class elemType>
 SequenceStack<elemType>::SequenceStack(int initSize)
@@ -56,3 +57,6 @@ void SequenceStack<elemType>::DoubleSpace()
 
 template class SequenceStack<int>;
 template class SequenceStack<double>;
+template class SequenceStack<BTree<int>::Node*>;
+template class SequenceStack<BTree<double>::Node*>;
+template class SequenceStack<BTree<char>::Node*>;

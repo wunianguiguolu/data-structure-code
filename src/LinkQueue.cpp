@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../include/LinkQueue.hpp"
 #include "../include/utils.hpp"
+#include "../include/QueueSimulator.hpp"
   
 template<class elemType>
 LinkQueue<elemType>::~LinkQueue() 
@@ -46,3 +47,4 @@ elemType LinkQueue<elemType>::deQueue()
 
 template class LinkQueue<int>;
 template class LinkQueue<double>;
+template class LinkQueue<simulator::eventT>;
