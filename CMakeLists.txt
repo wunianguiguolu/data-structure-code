@@ -72,6 +72,10 @@ target_link_libraries(PriorityQueue_test PRIVATE Catch2::Catch2WithMain)
 add_executable(QueueSimulator src/Simulator src/QueueSimulator.cpp src/LinkQueue.cpp src/PriorityQueue.cpp src/utils.cpp)
 target_link_libraries(QueueSimulator PRIVATE Catch2::Catch2WithMain)
 
+# Tests for StaticSearch_test
+add_executable(StaticSearch_test UnitTests/StaticSearch_test.cpp src/StaticSearch.cpp)
+target_link_libraries(StaticSearch_test PRIVATE Catch2::Catch2WithMain)
+
 # Tests for oj4_1
 add_executable(oj4_1 oj4_1.cpp)
 target_link_libraries(oj4_1 PRIVATE Catch2::Catch2WithMain)
